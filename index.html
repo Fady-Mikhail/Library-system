@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auto Table</title>
+    <link rel="stylesheet" href="Stylesheet.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="main-head">Welcome to Blablabla Library System</h1>
+      <form>
+        <fieldset>
+          <legend>To Register New Users</legend>
+          <label>Name</label>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            maxlength="10"
+            placeholder="User Name"
+            autofocus
+          />
+          <label>Mobile No.:</label>
+          <input
+            type="text"
+            name="mobile"
+            id="mobile"
+            maxlength="11"
+            placeholder="User Mobile"
+          />
+          <label>Age:</label>
+          <input
+            type="text"
+            name="age"
+            id="age"
+            maxlength="2"
+            placeholder="User Age"
+          />
+          <label>His Favourite Book is:</label>
+          <input
+            type="text"
+            name="book"
+            id="book"
+            placeholder="Favourite Book"
+          />
+
+          <button>submit</button>
+        </fieldset>
+      </form>
+      <br />
+      <div class="search-container">
+        <input type="search" name="search" id="search" />
+        <button id="searchbtn">Search</button>
+      </div>
+      <br />
+      <div>
+        <table>
+          <caption class="table-name">
+            Registerd Users
+          </caption>
+          <thead>
+            <tr>
+              <th>User Name</th>
+              <th>Mobile No.</th>
+              <th>Age</th>
+              <th>His Favourite Book</th>
+            </tr>
+          </thead>
+
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
